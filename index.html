@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Heer Mehndi | Luxury Bespoke Bridal Henna Artist | Mumbai, Dubai, London & Worldwide</title>
+    <meta name="title" content="Heer Mehndi | Luxury Bespoke Bridal Henna Artist | Mumbai, Dubai, London & Worldwide">
+    <meta name="description"
+        content="Heer Mehndi by Hirva offers ultra-exclusive, organic, haute-couture bridal henna services for HNI clients, royal celebrations, and luxury destination weddings worldwide.">
+    <meta name="keywords"
+        content="Luxury Mehndi Artist, Bespoke Bridal Henna, Hirva Mehndi, High Net Worth Bridal Henna, Destination Wedding Mehndi, Organic Henna Artist, Mumbai Henna Artist, Dubai Luxury Henna, London Bridal Henna">
+    <meta name="author" content="Hirva - Heer Mehndi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://heermehndi.com/">
+
+    <!-- Open Graph / Facebook SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heermehndi.com/">
+    <meta property="og:title" content="Heer Mehndi | Luxury Bespoke Bridal Henna Artist">
+    <meta property="og:description"
+        content="Haute-couture organic henna artistry for luxury brides & HNI celebrations globally by Master Artist Hirva.">
+    <meta property="og:image" content="assets/hero.png">
+
+    <!-- Twitter SEO -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://heermehndi.com/">
+    <meta property="twitter:title" content="Heer Mehndi | Luxury Bespoke Bridal Henna Artist">
+    <meta property="twitter:description"
+        content="Haute-couture organic henna artistry for luxury brides & HNI celebrations globally by Master Artist Hirva.">
+    <meta property="twitter:image" content="assets/hero.png">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Heer Mehndi by Hirva",
+      "image": "assets/hero.png",
+      "@id": "https://heermehndi.com/#artist",
+      "url": "https://heermehndi.com/",
+      "telephone": "+919876543210",
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "sameAs": [
+        "https://instagram.com/heermehndi",
+        "https://pinterest.com/heermehndi"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts (Rozha One, Cinzel, Marcellus, Cormorant Garamond & Plus Jakarta Sans for Royal Indian Heritage + Clean English Aesthetic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rozha+One&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP & ScrollTrigger Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        /* -------------------------------------------------------------
+           DESIGN SYSTEM & CSS VARIABLES
+           Theme: Medium & Notion Clean Ivory + Deep Organic Henna Olive
+           Typography: Royal Indian Heritage (Rozha One & Marcellus)
+        ------------------------------------------------------------- */
+        :root {
+            --bg-primary: #FBF9F5;
+            /* Warm Soft Ivory Off-White */
+            --bg-card: #F4F0E8;
+            /* Light Linen Container */
+            --bg-dark: #141E18;
+            /* Deep Charcoal Olive Dark */
+            --text-main: #1C241E;
+            /* Crisp Charcoal Text */
+            --text-muted: #5C675F;
+            /* Medium Muted Grey-Green */
+            --henna-primary: #1E352B;
+            /* Deep Organic Henna Olive */
+            --henna-light: #2D4030;
+            /* Medium Henna Green Accent */
+            --henna-subtle: #E8EEE9;
+            /* Soft Mint-Ivory Tint */
+            --accent-gold: #C5A059;
+            /* Antique Gold Vintage Accent */
+            --accent-gold-light: #E6D2A8;
+            /* Light Gold Glow */
+            --border-light: #E4DEC8;
+            /* Subtle Warm Border */
+
+            --font-royal: 'Rozha One', 'Cinzel', serif;
+            /* Royal Indian Calligraphic Serif */
+            --font-serif-title: 'Marcellus', 'Cinzel', serif;
+            /* Imperial Heritage Serif */
+            --font-serif-sub: 'Cormorant Garamond', Georgia, serif;
+            /* Delicate Italic Accent */
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Base Resets */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: var(--bg-primary);
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Selection Styling */
+        ::selection {
+            background-color: var(--henna-primary);
+            color: var(--bg-primary);
+        }
+
+        /* Typography Helper Classes */
+        .font-royal {
+            font-family: var(--font-royal);
+        }
+
+        .font-serif {
+            font-family: var(--font-serif-title);
+        }
+
+        .font-subserif {
+            font-family: var(--font-serif-sub);
+        }
+
+        .font-sans {
+            font-family: var(--font-sans);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-serif-title);
+            font-weight: 600;
+            line-height: 1.15;
+            color: var(--henna-primary);
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        /* Layout Container */
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* -------------------------------------------------------------
+           FLOATING CULTURAL MOTIF (GSAP ANIMATED ROAMING ASSET)
+        ------------------------------------------------------------- */
+        /* .roaming-cultural-motif {
+            position: fixed;
+            top: 12%;
+            right: 3%;
+            width: 200px;
+            height: auto;
+            z-index: 40;
+            pointer-events: none;
+            opacity: 0.12;
+
+            filter: invert(18%) sepia(28%) saturate(700%) hue-rotate(100deg) brightness(0.85);
+
+            transform-origin: center center;
+            will-change: transform;
+        } */
+
+        /* -------------------------------------------------------------
+           HEADER & NAVIGATION
+        ------------------------------------------------------------- */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 1.25rem 0;
+            transition: var(--transition-smooth);
+            background: rgba(251, 249, 245, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(228, 222, 200, 0.4);
+        }
+
+        .site-header.scrolled {
+            padding: 0.85rem 0;
+            box-shadow: 0 4px 30px rgba(30, 53, 43, 0.04);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo with Vintage Indian Cultural Background Framing */
+        .brand-logo-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0.4rem 0.8rem;
+        }
+
+        .vintage-art-backdrop {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 140%;
+            height: 140%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.18;
+        }
+
+        .brand-logo {
+            position: relative;
+            z-index: 1;
+            font-family: var(--font-royal);
+            font-size: 1.9rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            color: var(--henna-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .brand-logo .accent-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-gold);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-main);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            position: relative;
+            padding: 0.2rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 1.5px;
+            background-color: var(--henna-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-luxury {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background-color: var(--henna-primary);
+            color: #FFFFFF !important;
+            padding: 0.75rem 1.6rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid var(--henna-primary);
+            box-shadow: 0 4px 18px rgba(30, 53, 43, 0.12);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .btn-luxury:hover {
+            background-color: var(--henna-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 53, 43, 0.22);
+        }
+
+        .btn-luxury-outline {
+            background-color: transparent;
+            color: var(--henna-primary) !important;
+            border: 1px solid var(--henna-primary);
+        }
+
+        .btn-luxury-outline:hover {
+            background-color: var(--henna-primary);
+            color: #FFFFFF !important;
+        }
+
+        /* -------------------------------------------------------------
+           HERO SECTION
+        ------------------------------------------------------------- */
+        .hero-section {
+            min-height: 100vh;
+            padding-top: 8.5rem;
+            padding-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: radial-gradient(circle at 10% 20%, rgba(232, 238, 233, 0.6) 0%, rgba(251, 249, 245, 1) 70%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.4rem 1.2rem;
+            background: rgba(30, 53, 43, 0.06);
+            border: 1px solid rgba(30, 53, 43, 0.15);
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--henna-primary);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+            font-size: clamp(2.8rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--henna-primary);
+            line-height: 1.08;
+        }
+
+        .hero-title span.serif-italic {
+            font-family: var(--font-serif-sub);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--accent-gold);
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            max-width: 540px;
+            margin-bottom: 2.5rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+        }
+
+        .hero-image-frame {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(20, 30, 24, 0.12);
+            border: 1px solid rgba(228, 222, 200, 0.8);
+        }
+
+        .hero-image-frame img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+            transition: transform 1.2s ease;
+        }
+
+        .hero-image-frame:hover img {
+            transform: scale(1.03);
+        }
+
+        .hero-experience-card {
+            position: absolute;
+            bottom: -1.5rem;
+            left: -2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 1.4rem 1.8rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            z-index: 10;
+        }
+
+        .experience-number {
+            font-family: var(--font-serif-title);
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--henna-primary);
+            line-height: 1;
+        }
+
+        .experience-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+        }
+
+        /* -------------------------------------------------------------
+           FUNCTIONS / OCCASIONS SECTION
+        ------------------------------------------------------------- */
+        .section-padding {
+            padding: 7rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4.5rem auto;
+        }
+
+        .section-subtitle {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-gold);
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+            color: var(--henna-primary);
+            margin-bottom: 1.2rem;
+        }
+
+        .occasions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.8rem;
+        }
+
+        @media (max-width: 1280px) {
+            .occasions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .occasions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .occasion-card {
+            background-color: var(--bg-card);
+            padding: 2.8rem 2.2rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            will-change: transform, opacity;
+        }
+
+        .occasion-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(30, 53, 43, 0.08);
+            border-color: var(--henna-primary);
+            background-color: #FFFFFF;
+        }
+
+        .occasion-icon-wrapper {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--henna-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.8rem;
+            color: var(--henna-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .occasion-card:hover .occasion-icon-wrapper {
+            background: var(--henna-primary);
+            color: #FFFFFF;
+        }
+
+        .occasion-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 1rem;
+        }
+
+        .occasion-card p {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            margin-bottom: 1.5rem;
+        }
+
+        .occasion-tag {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-gold);
+        }
+
+        /* -------------------------------------------------------------
+           GALLERY / PORTFOLIO SECTION
+        ------------------------------------------------------------- */
+        .gallery-section {
+            background-color: #FFFFFF;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .gallery-filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border-light);
+            padding: 0.6rem 1.6rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background-color: var(--henna-primary);
+            color: #FFFFFF;
+            border-color: var(--henna-primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 380px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(20, 30, 24, 0.85) 0%, rgba(20, 30, 24, 0) 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-title {
+            color: #FFFFFF;
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .gallery-category {
+            color: var(--accent-gold-light);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* -------------------------------------------------------------
+           ABOUT HIRVA SECTION
+        ------------------------------------------------------------- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-image-column {
+            position: relative;
+        }
+
+        .about-portrait-frame {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(30, 53, 43, 0.12);
+            border: 1px solid var(--border-light);
+        }
+
+        .about-portrait-frame img {
+            width: 100%;
+            height: 580px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .about-signature-badge {
+            position: absolute;
+            bottom: 2rem;
+            right: -2rem;
+            background: var(--henna-primary);
+            color: #FFFFFF;
+            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-signature-badge p.artist-name {
+            font-family: var(--font-serif-title);
+            font-size: 1.5rem;
+            color: var(--accent-gold-light);
+            margin-bottom: 0.2rem;
+        }
+
+        .about-content h2 {
+            font-size: clamp(2.2rem, 3.5vw, 3rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+        }
+
+        .about-content p {
+            margin-bottom: 1.4rem;
+            font-size: 1.08rem;
+            line-height: 1.75;
+        }
+
+        .philosophy-list {
+            list-style: none;
+            margin: 2rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+
+        .philosophy-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--henna-primary);
+        }
+
+        .philosophy-item svg {
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+            color: var(--accent-gold);
+        }
+
+        /* -------------------------------------------------------------
+           FREQUENTLY ASKED QUESTIONS (FAQ SECTION - HENNA BY DIVYA STYLE)
+        ------------------------------------------------------------- */
+        .faq-section {
+            background-color: var(--bg-card);
+        }
+
+        .faq-accordion {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #FFFFFF;
+            border-radius: 14px;
+            border: 1px solid var(--border-light);
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .faq-question {
+            padding: 1.6rem 2rem;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--henna-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: var(--henna-subtle);
+            color: var(--henna-primary);
+            transition: transform 0.4s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+            background-color: var(--henna-primary);
+            color: #FFFFFF;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease;
+            padding: 0 2rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 2rem 1.6rem 2rem;
+        }
+
+        .faq-answer p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* -------------------------------------------------------------
+           CALL TO ACTION (CTA) SECTION & WHATSAPP REDIRECT
+        ------------------------------------------------------------- */
+        .cta-section {
+            background: radial-gradient(circle at center, var(--henna-light) 0%, var(--bg-dark) 100%);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 7.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-bg-pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.06;
+            background-image: radial-gradient(#FFFFFF 1px, transparent 1px);
+            background-size: 24px 24px;
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            color: #FFFFFF;
+            font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+            margin-bottom: 1.4rem;
+        }
+
+        .cta-desc {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 1.15rem;
+            margin-bottom: 2.8rem;
+            line-height: 1.65;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background-color: #25D366;
+            color: #FFFFFF !important;
+            padding: 1.1rem 2.4rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.35);
+            transition: var(--transition-smooth);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20bd5a;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        /* -------------------------------------------------------------
+           ARTISTIC LUXURY FOOTER
+        ------------------------------------------------------------- */
+        .site-footer {
+            background-color: var(--bg-dark);
+            color: #FFFFFF;
+            padding: 5rem 0 2.5rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 3.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand h3 {
+            color: #FFFFFF;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-title {
+            color: var(--accent-gold-light);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 1.4rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: #FFFFFF;
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* -------------------------------------------------------------
+           LIGHTBOX MODAL FOR PORTFOLIO
+        ------------------------------------------------------------- */
+        .lightbox-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(14, 22, 17, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox-content {
+            max-width: 90vw;
+            max-height: 85vh;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 85vh;
+            border-radius: 12px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -2.5rem;
+            right: 0;
+            color: #FFFFFF;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .philosophy-list {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-experience-card {
+                left: 1rem;
+                bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FLOATING INDIAN CULTURAL MOTIF (GSAP SCROLL-ROTATE ASSET) -->
+    <!-- <img class="roaming-cultural-motif" id="roamingMotif" src="assets/Group 4.png" alt="" aria-hidden="true"
+        draggable="false"> -->
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-wrapper">
+
+            <!-- Logo with Vintage Art Backdrop Framing -->
+            <a href="#" style="
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    padding: 0 18px;
+    text-decoration: none;
+    color: #1E352B;
+    overflow: visible;
+">
+
+                <!-- Decorative vintage frame -->
+                <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="
+            position: absolute;
+            inset: 50% auto auto 50%;
+            width: 220px;
+            height: 80px;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            overflow: visible;
+        ">
+                    <!-- Upper ornamental curve -->
+                    <path
+                        d="M8 40 C35 18, 58 18, 82 32 C91 37, 96 40, 110 40 C124 40, 129 37, 138 32 C162 18, 185 18, 212 40"
+                        fill="none" stroke="#C5A059" stroke-width="0.8" opacity="0.65" />
+
+                    <!-- Lower ornamental curve -->
+                    <path
+                        d="M8 40 C35 62, 58 62, 82 48 C91 43, 96 40, 110 40 C124 40, 129 43, 138 48 C162 62, 185 62, 212 40"
+                        fill="none" stroke="#C5A059" stroke-width="0.8" opacity="0.65" />
+
+                    <!-- Central medallion -->
+                    <circle cx="110" cy="40" r="28" fill="none" stroke="#1E352B" stroke-width="0.8"
+                        stroke-dasharray="2 3" opacity="0.22" />
+
+                    <!-- Small central ornament -->
+                    <circle cx="110" cy="40" r="2" fill="#C5A059" opacity="0.85" />
+
+                    <!-- Side dots -->
+                    <circle cx="18" cy="40" r="1.5" fill="#C5A059" opacity="0.65" />
+                    <circle cx="202" cy="40" r="1.5" fill="#C5A059" opacity="0.65" />
+                </svg>
+
+                <!-- Logo text -->
+                <span style="
+        position: relative;
+        z-index: 2;
+        display: inline-flex;
+        align-items: baseline;
+        font-family: var(--font-royal, Georgia, serif);
+        font-size: 1.85rem;
+        font-weight: 500;
+        letter-spacing: 0.025em;
+        line-height: 1;
+        color: #1E352B;
+        white-space: nowrap;
+    ">
+                    Heer Mehndi
+
+                    <span style="
+            width: 6px;
+            height: 6px;
+            margin-left: 8px;
+            margin-bottom: 2px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #C5A059;
+            box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.10);
+        "></span>
+                </span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About Hirva</a></li>
+                <li><a href="#occasions" class="nav-link">Occasions</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#faqs" class="nav-link">FAQs</a></li>
+            </ul>
+
+            <!-- Header Action Button -->
+            <a href="https://wa.me/919876543210?text=Hello%20Heer%20Mehndi,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20luxury%20bridal%20henna%20consultation."
+                target="_blank" rel="noopener" class="btn-luxury">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                Book Experience
+            </a>
+
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <div class="hero-text-content">
+                        <div class="hero-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C5A059">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            Haute Couture Henna Artistry
+                        </div>
+
+                        <h1 class="hero-title">
+                            Timeless Royalty in <br>
+                            <span class="serif-italic">Organic Henna</span> Artistry
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Curated exclusively for discerning brides, high-net-worth families, and destination
+                            celebrations across Mumbai, Dubai, London, and worldwide.
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <a href="https://wa.me/919876543210?text=Hello%20Heer%20Mehndi,%20I%20would%20like%20to%20check%20availability%20for%20a%20luxury%20bridal%20mehndi%20booking."
+                                target="_blank" rel="noopener" class="btn-luxury">
+                                Inquire Availability
+                            </a>
+                            <a href="#portfolio" class="btn-luxury btn-luxury-outline">
+                                View Portfolio
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <img src="assets/hero.png" alt="Luxury Bridal Henna Artistry by Heer Mehndi" width="600"
+                                height="600" loading="eager">
+                        </div>
+
+                        <div class="hero-experience-card">
+                            <div class="experience-number">28+</div>
+                            <div class="experience-label">Years of Mastery · 500+ Luxury Brides</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OCCASIONS / FUNCTIONS SECTION -->
+        <section class="section-padding" id="occasions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Curated Experiences</span>
+                    <h2 class="section-title">Designed for Special Occasions</h2>
+                    <p>Each bespoke commission is tailored with pure organic henna paste, personalized motifs, and
+                        meticulous craftsmanship.</p>
+                </div>
+                <div class="occasions-grid">
+
+                    <!-- Card 1: Mehndi Ceremony -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <!-- Mehndi cone / henna tube icon -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                                    <path d="M8 12 Q10 8 12 12 Q14 16 16 12" />
+                                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3>Mehndi Ceremony</h3>
+                            <p>The heart of every Hindu wedding — a dedicated Mehndi rasam session featuring elaborate
+                                bridal and family henna, devotional motifs, and a joyful artistic lounge for all guests.
+                            </p>
+                        </div>
+                        <span class="occasion-tag">The Sacred Rasam</span>
+                    </div>
+
+                    <!-- Card 2: Bridal Trousseau -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </div>
+                            <h3>Bridal Trousseau</h3>
+                            <p>Exquisite full-arm and leg bespoke henna narrating your love story through intricate
+                                mandala portraits, royal peacock motifs, and sacred wedding vows.</p>
+                        </div>
+                        <span class="occasion-tag">Signature Bridal Service</span>
+                    </div>
+
+                    <!-- Card 3: Engagement / Sagai -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                            </div>
+                            <h3>Engagement &amp; Sagai</h3>
+                            <p>Delicate fine-line henna for the engagement ceremony — elegant ring-finger motifs,
+                                couple-initial cuffs, and festive hand adornment for the entire family.</p>
+                        </div>
+                        <span class="occasion-tag">Betrothal Elegance</span>
+                    </div>
+
+                    <!-- Card 4: Baby Shower / Gud Mehndi -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper"
+                                style="background: rgba(220, 80, 60, 0.1); color: #C4472C;">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                            </div>
+                            <h3>Baby Shower &amp; Gud Mehndi</h3>
+                            <p>Traditional red-tone <em>Gud Mehndi</em> — a sacred jaggery-based henna applied to the
+                                expecting mother's palms, celebrating new life with ancient Indian blessings and
+                                fertility motifs.</p>
+                        </div>
+                        <span class="occasion-tag" style="color: #C4472C;">Sacred Red Tradition</span>
+                    </div>
+
+                    <!-- Card 5: Teej -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="5" />
+                                    <line x1="12" y1="1" x2="12" y2="3" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                    <line x1="1" y1="12" x2="3" y2="12" />
+                                    <line x1="21" y1="12" x2="23" y2="12" />
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                                </svg>
+                            </div>
+                            <h3>Teej Festival</h3>
+                            <p>Celebrate the monsoon goddess Parvati with vibrant full-hand henna featuring peacock,
+                                lotus, and swing motifs — the hallmark of Teej sisterhood and devotion.</p>
+                        </div>
+                        <span class="occasion-tag">Festival of Parvati</span>
+                    </div>
+
+                    <!-- Card 6: Karva Chauth -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                                </svg>
+                            </div>
+                            <h3>Karva Chauth</h3>
+                            <p>The moon-fast of love — intricate husband-hidden name motifs woven into elaborate floral
+                                and celestial henna patterns that celebrate the eternal bond between partners.</p>
+                        </div>
+                        <span class="occasion-tag">The Moon-Fast Ritual</span>
+                    </div>
+
+                    <!-- Card 7: Sangeet & Festivities -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 18V5l12-2v13" />
+                                    <circle cx="6" cy="18" r="3" />
+                                    <circle cx="18" cy="16" r="3" />
+                                </svg>
+                            </div>
+                            <h3>Sangeet &amp; Festivities</h3>
+                            <p>High-energy group lounge service for bridal parties, guests, and family — rapid fine-line
+                                henna for dancing hands and an unforgettable celebration atmosphere.</p>
+                        </div>
+                        <span class="occasion-tag">Luxury Group Lounge</span>
+                    </div>
+
+                    <!-- Card 8: Destination & VIP Events -->
+                    <div class="occasion-card">
+                        <div>
+                            <div class="occasion-icon-wrapper">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+                                </svg>
+                            </div>
+                            <h3>Destination &amp; VIP Events</h3>
+                            <p>Full-service private concierge henna for destination royal weddings, Diwali galas,
+                                Navratri celebrations, and exclusive HNI events worldwide.</p>
+                        </div>
+                        <span class="occasion-tag">Global Couture Service</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / GALLERY SECTION -->
+        <section class="section-padding gallery-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio Showcase</span>
+                    <h2 class="section-title">The Artistry of Heer Mehndi</h2>
+                    <p>Explore our gallery of deep mahogany organic henna stains, delicate fine lines, and contemporary
+                        aesthetic compositions.</p>
+                </div>
+
+                <!-- Gallery Filters -->
+                <div class="gallery-filter-bar">
+                    <button class="filter-btn active" data-filter="all">All Masterpieces</button>
+                    <button class="filter-btn" data-filter="bridal">Bridal Trousseau</button>
+                    <button class="filter-btn" data-filter="minimal">Minimalist Modern</button>
+                    <button class="filter-btn" data-filter="destination">Destination Royal</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+
+                    <div class="gallery-item" data-category="bridal"
+                        onclick="openLightbox('assets/portfolio-1.png', 'Royal Mandala Bridal Trousseau')">
+                        <img src="assets/portfolio-1.png" alt="Royal Mandala Bridal Trousseau" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Royal Mandala Trousseau</h3>
+                            <span class="gallery-category">Bridal Masterpiece</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="minimal"
+                        onclick="openLightbox('assets/portfolio-2.png', 'Contemporary Minimalist Vine')">
+                        <img src="assets/portfolio-2.png" alt="Contemporary Minimalist Vine" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Couture Wrist Lace</h3>
+                            <span class="gallery-category">Minimalist Modern</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="destination"
+                        onclick="openLightbox('assets/portfolio-3.png', 'Udaipur Palace Royal Feet Henna')">
+                        <img src="assets/portfolio-3.png" alt="Udaipur Palace Royal Feet Henna" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Palace Anklet & Soles</h3>
+                            <span class="gallery-category">Destination Royal</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bridal"
+                        onclick="openLightbox('assets/hero.png', 'Full Arm Bridal Henna Artwork')">
+                        <img src="assets/hero.png" alt="Full Arm Bridal Henna Artwork" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Lotus Heritage Motif</h3>
+                            <span class="gallery-category">Bridal Masterpiece</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="minimal"
+                        onclick="openLightbox('assets/artist.png', 'Artist Hirva Custom Application')">
+                        <img src="assets/artist.png" alt="Artist Hirva Custom Application" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Live Artistic Precision</h3>
+                            <span class="gallery-category">Bespoke Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="destination"
+                        onclick="openLightbox('assets/portfolio-1.png', 'Maharani Hand Craftsmanship')">
+                        <img src="assets/portfolio-1.png" alt="Maharani Hand Craftsmanship" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Maharani Stain Depth</h3>
+                            <span class="gallery-category">Destination Royal</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT HIRVA SECTION -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-image-column">
+                        <div class="about-portrait-frame">
+                            <img src="assets/artist.png" alt="Master Artist Hirva - Founder of Heer Mehndi">
+                        </div>
+                        <div class="about-signature-badge">
+                            <p class="artist-name">Hirva</p>
+                            <p
+                                style="font-size: 0.8rem; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.08em;">
+                                Master Henna Artist & Visionary</p>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-subtitle">Heritage & Philosophy</span>
+                        <h2>Crafting Royal Legacies <br>Through Pure Organic Henna</h2>
+
+                        <p>With over fifteen years of dedicated artistic mastery, Hirva has transformed traditional
+                            henna application into a world-class luxury experience. Her signature technique marries
+                            intricate Indian cultural symbolism with contemporary high-fashion elegance.</p>
+
+                        <p>We craft our own 100% natural organic henna paste in-house using triple-sifted Sojat henna
+                            leaves, pure essential oils (lavender and tea tree), and zero chemical additives—ensuring a
+                            rich, mahogany stain that matures safely and gorgeously.</p>
+
+                        <ul class="philosophy-list">
+                            <li class="philosophy-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                100% Chemical-Free Natural Henna
+                            </li>
+                            <li class="philosophy-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Private Concierge Travel Worldwide
+                            </li>
+                            <li class="philosophy-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Custom Storytelling Motifs
+                            </li>
+                            <li class="philosophy-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Dedicated Bridal Team Lounge
+                            </li>
+                        </ul>
+
+                        <a href="https://wa.me/919876543210?text=Hello%20Hirva,%20I%20read%20about%20your%20organic%20henna%20philosophy%20and%20would%20love%20to%20consult."
+                            target="_blank" rel="noopener" class="btn-luxury" style="margin-top: 1rem;">
+                            Consult With Hirva
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION (HENNA BY DIVYA STYLE FAQ) -->
+        <section class="section-padding faq-section" id="faqs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Information & Guidelines</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p>Clear details regarding booking timelines, organic stain care, destination travel, and custom
+                        bridal consults.</p>
+                </div>
+
+                <div class="faq-accordion">
+
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>How far in advance should I book my luxury bridal henna?</span>
+                            <span class="faq-icon">↓</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For peak destination wedding seasons (October to April), we recommend reserving your date
+                                6 to 12 months in advance. Because Hirva accepts a limited number of high-profile
+                                commissions per month, early consultation ensures dedicated priority.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is your henna paste 100% natural and safe for sensitive skin?</span>
+                            <span class="faq-icon">↓</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. We hand-mix fresh organic batches before every event using premium Sojat
+                                henna powder, lemon juice, sugar, and therapeutic-grade eucalyptus and lavender
+                                essential oils. We never use PPD, black henna, or synthetic chemicals.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I achieve the deepest mahogany stain for my wedding day?</span>
+                            <span class="faq-icon">↓</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bridal henna should be applied 48 hours prior to the main wedding ceremony. Keep the
+                                paste intact for 8-10 hours, seal with lemon-sugar syrup, and avoid direct water contact
+                                for the first 24 hours. Full aftercare balm instructions are provided upon completion.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you travel internationally for destination weddings?</span>
+                            <span class="faq-icon">↓</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Hirva and her senior team travel worldwide across Europe, the Middle East, North
+                                America, and Asia. Destination booking packages include travel, private lounge artist
+                                teams, and complete wedding event coverage.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can we incorporate custom personal elements into the bridal design?</span>
+                            <span class="faq-icon">↓</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Custom bridal design consultations include sketching your personal
+                                story—incorporating initial hidden dates, proposal skylines, sacred mantras, pet
+                                portraits, or custom wedding logos seamlessly into the traditional motifs.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION (CTA) SECTION -->
+        <section class="cta-section" id="contact">
+            <div class="cta-bg-pattern"></div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Reserve Your Bespoke Bridal Experience</h2>
+                    <p class="cta-desc">Directly connect with Master Artist Hirva on WhatsApp to discuss your date,
+                        custom requirements, and international travel itineraries.</p>
+
+                    <!-- Direct WhatsApp Redirect CTA Button -->
+                    <a href="https://wa.me/919876543210?text=Hello%20Heer%20Mehndi,%20I%20am%20interested%20in%20reserving%20a%20luxury%20henna%20booking%20for%20my%20upcoming%20wedding/event."
+                        target="_blank" rel="noopener" class="btn-whatsapp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                        Book Now on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img id="lightboxImg" src="" alt="Enlarged Portfolio View">
+            <p id="lightboxCaption"
+                style="color: #FFFFFF; text-align: center; margin-top: 1rem; font-family: var(--font-serif-title); font-size: 1.2rem;">
+            </p>
+        </div>
+    </div>
+
+    <!-- ARTISTIC LUXURY FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <h3>Heer Mehndi</h3>
+                    <p>Haute-couture organic henna artistry for luxury brides and royal destination celebrations
+                        worldwide.</p>
+                    <p style="font-size: 0.85rem; color: var(--accent-gold-light);">Mumbai · Dubai · London · Worldwide
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Hirva</a></li>
+                        <li><a href="#occasions">Occasions & Events</a></li>
+                        <li><a href="#portfolio">Masterpiece Gallery</a></li>
+                        <li><a href="#faqs">Guidelines & FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#occasions">Bridal Trousseau</a></li>
+                        <li><a href="#occasions">Sangeet Lounge</a></li>
+                        <li><a href="#occasions">Destination Travel</a></li>
+                        <li><a href="#occasions">VIP Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Inquiries</h4>
+                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Direct Booking
+                        Concierge:</p>
+                    <p style="font-weight: 600; color: #FFFFFF; font-size: 1rem; margin-bottom: 0.5rem;">+91 98765 43210
+                    </p>
+                    <p style="font-size: 0.9rem; color: var(--accent-gold-light);">concierge@heermehndi.com</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Heer Mehndi by Hirva. All Rights Reserved. Crafted with pure organic henna & luxury
+                    precision.</p>
+                <p>Curated for HNI & Global Couture Weddings</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT & GSAP SCROLLANIMATIONS -->
+    <script>
+
+        // const motif = document.querySelector(".roaming-cultural-motif");
+
+        // window.addEventListener("scroll", () => {
+        //     if (!motif) return;
+
+        //     const scrollY = window.scrollY;
+
+        //     // Move DOWN while scrolling
+        //     const moveDown = scrollY * 0.35;
+
+        //     // Rotate around the CENTER of the image
+        //     const rotation = scrollY * 0.15;
+
+        //     motif.style.transform =
+        //         `translateY(${moveDown}px) rotate(${rotation}deg)`;
+        // });
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Register GSAP ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 1. Header Glassmorphism Scroll Effect
+            const header = document.getElementById('siteHeader');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // 2. GSAP Roaming Mehndi Hands — Scroll-driven rotation only (fixed position)
+            gsap.to('#roamingMotif', {
+                scrollTrigger: {
+                    trigger: 'body',
+                    start: 'top top',
+                    end: 'bottom bottom',
+                    scrub: 2
+                },
+                rotate: 360,
+                ease: 'none'
+            });
+
+
+            // 3. Hero Section Stagger Reveal
+            gsap.from('.hero-badge, .hero-title, .hero-subtitle, .hero-cta-group', {
+                duration: 1.2,
+                y: 40,
+                opacity: 0,
+                stagger: 0.2,
+                ease: 'power3.out'
+            });
+
+            gsap.from('.hero-image-frame', {
+                duration: 1.4,
+                scale: 0.92,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: 0.4
+            });
+
+            // 4. Section Scroll Animations
+            gsap.utils.toArray('.section-header').forEach((header) => {
+                gsap.from(header, {
+                    scrollTrigger: {
+                        trigger: header,
+                        start: 'top 85%'
+                    },
+                    y: 35,
+                    opacity: 0,
+                    duration: 1,
+                    ease: 'power2.out'
+                });
+            });
+
+            // 5. Occasions Cards — Per-card staggered ScrollTrigger
+            // Each card gets its own ScrollTrigger so all 8 animate regardless
+            // of how far the user scrolls before the section enters view.
+            const occasionCards = gsap.utils.toArray('.occasion-card');
+            occasionCards.forEach((card, index) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: 'top 92%',
+                        once: true
+                    },
+                    y: 50,
+                    opacity: 0,
+                    duration: 0.75,
+                    delay: index * 0.08,   // gentle stagger via delay offset
+                    ease: 'power3.out',
+                    clearProps: 'transform,opacity'  // restore CSS hover transitions
+                });
+            });
+
+
+            gsap.from('.gallery-item', {
+                scrollTrigger: {
+                    trigger: '.gallery-grid',
+                    start: 'top 80%'
+                },
+                scale: 0.94,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.12,
+                ease: 'power2.out'
+            });
+
+            // 5. Portfolio Filtering Logic
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        if (filterValue === 'all' || category === filterValue) {
+                            item.style.display = 'block';
+                            gsap.fromTo(item, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.4 });
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 6. FAQ Accordion Interaction
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+        });
+
+        // Lightbox Functions
+        function openLightbox(imageSrc, captionText) {
+            const modal = document.getElementById('lightboxModal');
+            const img = document.getElementById('lightboxImg');
+            const caption = document.getElementById('lightboxCaption');
+
+            img.src = imageSrc;
+            caption.textContent = captionText;
+            modal.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
